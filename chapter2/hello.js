@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
   log(count);
   res.statusCode = 200; // ❸
   res.setHeader("Content-Type", "text/plain"); // ➍
-  res.write("hello hello\n"); // ➎
+  res.write("hello hello hello\n"); // ➎
   // prettier-ignore
   setTimeout(() => { // ➏
     res.end("Node.js");
